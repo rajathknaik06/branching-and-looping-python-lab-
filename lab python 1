@@ -1,0 +1,37 @@
+""" Janani is studying coordinate geometry, and she is curious about the quadrants in a coordinate plane. She wants to create a program that takes two integer inputs representing the coordinates of a point and determines in which quadrant the point lies.
+
+
+
+Help her by writing a program to solve this problem.
+
+
+
+Conditions
+
+If both x and y are positive, the point lies in the first quadrant.
+If x is negative and y is positive, the point lies in the second quadrant.
+If both x and y are negative, the point lies in the third quadrant.
+If x is positive and y is negative, the point lies in the fourth quadrant.
+If both x and y are zero, the point is at the origin.
+Input format :
+The first line of input consists of an integer x, representing the point.
+
+The second line of input consists of an integer y, representing the point.
+
+Output format :
+The output displays the quadrant in which the point lies or whether it lies at the origin. """
+
+# You are using Python
+x=int(input())
+y=int(input())
+ 
+if(x > 0 and  y > 0):
+    print("The coordinate point lies in the first quadrant.")
+elif(x < 0 and y > 0):
+    print("The coordinate point lies in the second quadrant.")
+elif(x < 0 and y < 0):
+    print("The coordinate point lies in the third quadrant.")
+elif(x > 0 and y < 0):
+    print("The coordinate point lies in the fourth quadrant.")
+elif(x == 0 and  y == 0):
+    print("The coordinate point lies at the origin.")
